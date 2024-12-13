@@ -1,4 +1,3 @@
-/* 비디오 스타일 */
 .background-video {
     position: fixed;
     top: 0;
@@ -6,11 +5,11 @@
     width: 100%;
     height: 100%;
     object-fit: cover;
-    z-index: -1; /* 콘텐츠보다 뒤에 배치 */
+    z-index: -1;
 }
 
 .login-box {
-    position: relative; /* 비디오 위에 위치 */
+    position: relative;
     background-color: rgba(0, 0, 0, 0.4);
     padding: 45px;
     border-radius: 15px;
@@ -18,16 +17,16 @@
     border: 2px solid #ffffff;
     width: 450px;
     text-align: center;
-    z-index: 1; /* 비디오 위에 표시 */
+    z-index: 1;
     margin: auto;
-    opacity: 0; /* 처음에 완전히 투명 */
-    visibility: hidden; /* 초기 상태에서 숨김 */
-    transition: opacity 1.5s ease, visibility 1.5s ease; /* 부드러운 애니이션 */
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 1.5s ease, visibility 1.5s ease;
 }
 
 .login-box.show {
-    opacity: 1; /* 보이게 할 때 완전 불투명 */
-    visibility: visible; /* 보이게 할 때 표시 */
+    opacity: 1;
+    visibility: visible;
 }
 
 .chook {
@@ -51,16 +50,14 @@
     background-color: #b55b00;
 }
 
-        /* 화면 중앙 배치 */
 .center {
     display: flex;
     justify-content: center;
     align-items: center;
     height: 90vh;
-    cursor: pointer; /* 클릭할 수 있는 커서 표시 */
+    cursor: pointer;
 }
 
-/* 하단 작은 텍스트 스타일 */
 .small-text {
     position: fixed;
     bottom: 10px;
@@ -148,22 +145,22 @@ body {
 }
 .tooltip .tooltipimg {
     visibility: hidden;
-    width: 250px; /* 툴팁 너비 */
+    width: 250px;
     text-align: center;
     border-radius: 5px;
     padding: 5px;
     color: white;
     position: absolute;
     z-index: 1;
-    bottom: -350%; /* 툴팁이 span 위에 나타나도록 설정 */
+    bottom: -350%;
     left: 50%;
-    margin-left: -100px; /* 툴팁이 가운데로 정렬되게 함 */
+    margin-left: -100px;
     opacity: 0;
-    transition: opacity 0.5s; /* 툴팁이 서서히 나타나고 사라지도록 함 */
+    transition: opacity 0.5s;
 }
 .tooltip .tooltiptxt {
     visibility: hidden;
-    width: 250px; /* 툴팁 너비 */
+    width: 250px;
     text-align: center;
     border: 2px solid black;
     background-color: cornsilk;
@@ -172,21 +169,20 @@ body {
     color: indianred;
     position: absolute;
     z-index: 1;
-    bottom: -350%; /* 툴팁이 span 위에 나타나도록 설정 */
+    bottom: -350%;
     left: 50%;
-    margin-left: -100px; /* 툴팁이 가운데로 정렬되게 함 */
+    margin-left: -100px;
     opacity: 0;
-    transition: opacity 0.5s; /* 툴팁이 서서히 나타나고 사라지도록 함 */
+    transition: opacity 0.5s;
 }
 
-/* 마우스를 올리면 툴팁이 보이도록 설정 */
 .tooltip:hover .tooltipimg, .tooltip:hover .tooltiptxt {
     visibility: visible;
     opacity: 1;
 }
 
 .Mya {
-     overflow: hidden; /* 스크롤 막기 */
+     overflow: hidden;
 }
 
 
